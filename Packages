@@ -6,9 +6,6 @@ Version: 0.0.1
 Depends: mobilesubstrate
 Filename: debs//com.smokin1337.smartlpm_0.0.1_iphoneos-arm.deb
 Size: 14,816
-MD5sum: 5FD8A4AC7D482B6DC453F00688A1D2A4
-SHA1: 5DC1EE7E4A0B8BCB1AB29E305FCFDAEC4C18D1B0
-SHA256: B2EC2D7AFE8A4D96C1A61D88C17F1F5CAEEDC3241B59A5E28552CD9BDB30A7B9
 Description: Smarter low power mode Enables low power mode while device is locked.
 Name: SmartLPM
 Author: smokin1337 <smokin1337@gmail.com>
