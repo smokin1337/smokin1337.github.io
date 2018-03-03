@@ -5,10 +5,10 @@ Architecture: iphoneos-arm
 Version: 0.0.1
 Depends: mobilesubstrate
 Filename: debs//com.smokin1337.smartlpm_0.0.1_iphoneos-arm.deb
-Size: 14816
-MD5sum: 5fd8a4ac7d482b6dc453f00688a1d2a4
-SHA1: 5dc1ee7e4a0b8bcb1ab29e305fcfdaec4c18d1b0
-SHA256: b2ec2d7afe8a4d96c1a61d88c17f1f5caeedc3241b59a5e28552cd9bdb30a7b9
+Size: 14828
+MD5sum: 66503b151fa51efade73531f6ee79b38
+SHA1: d85de1166e1726c6789edd2ef6149f2473886c11
+SHA256: 6a9cb1ffe53284bd723af903270c6a1813b62f90e5a4c7c60b5de0df1f3bc2ea
 Description: Smarter low power mode Enables low power mode while device is locked.
 Name: SmartLPM
 Author: smokin1337 <smokin1337@gmail.com>
