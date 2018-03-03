@@ -3,8 +3,8 @@ Section: Tweaks
 Maintainer: smokin1337
 Architecture: iphoneos-arm
 Version: 0.0.4
-Depends: mobilesubstrate
-Filename: debs//smartlpm/com.smokin1337.smartlpm_0.0.4_iphoneos-arm.deb
+Depends: mobilesubstrate, preferenceloader
+Filename: /debs/smartlpm/com.smokin1337.smartlpm_0.0.4_iphoneos-arm.deb
 Size: 14826
 MD5sum: 4b0efd4f805d669381c753c369a7ccf7
 SHA1: 	88a670ec1b589652413bea0b90cb71cb451f1b8a
