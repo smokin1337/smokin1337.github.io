@@ -1,0 +1,10 @@
+Package: com.smokin1337.smartlpm
+Name: SmartLPM
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: A smarter low power mode
+Maintainer: smokin1337
+Author: smokin1337
+Section: Tweaks
+Version: 0.0.1
+Installed-Size: 258
