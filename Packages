@@ -9,6 +9,6 @@ Size: 14826
 MD5sum: 4b0efd4f805d669381c753c369a7ccf7
 SHA1: 	88a670ec1b589652413bea0b90cb71cb451f1b8a
 SHA256: 	1237000e7f84b442670a26c86569fcf02d64ed0447d7e8fc64161a1c836f66ea
-Description: Smarter low power mode Enables low power mode while device is locked.
+Description: Smarter low power mode. Automatically enables low power mode while device is locked and disable when unlocked.
 Name: SmartLPM
 Author: smokin1337 <smokin1337@gmail.com>
