@@ -4,7 +4,7 @@ Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 258
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.smartlpm_1.0_iphoneos-arm.deb
+Filename: /debs/smartlpm/com.smokin1337.smartlpm_1.0_iphoneos-arm.deb
 Size: 15026
 MD5sum: c1e745b57a22e8a09d685e8f224c61c4
 SHA1: d70796e06cc5c0d540944cd628a2f41dacf3fbb5
