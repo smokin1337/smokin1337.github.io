@@ -4,7 +4,7 @@ Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 258
 Depends: mobilesubstrate
-Filename: beta/com.smokin1337.blackoutcc_0.0.1_iphoneos-arm.deb
+Filename: debs/com.smokin1337.blackoutcc_0.0.1_iphoneos-arm.deb
 Size: 12232
 MD5sum: 7737ec5253c428f30167fbe6c923fb8a
 SHA1: c7844e5fcd07fe3e5cf7e6e819c3920e19eaa29f
@@ -20,7 +20,7 @@ Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 274
 Depends: mobilesubstrate
-Filename: beta/com.smokin1337.smartlpm_1.0.8-6_iphoneos-arm.deb
+Filename: debs/com.smokin1337.smartlpm_1.0.8-6_iphoneos-arm.deb
 Size: 16658
 MD5sum: 21b81c4fea0f3b3abcbbf58f7e0f6bff
 SHA1: 7aa12627e623fee735d6e1a9b25406281292a4ff
