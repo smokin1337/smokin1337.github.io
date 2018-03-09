@@ -1,18 +1,18 @@
-Package: com.smokin1337.blackout
-Version: 0.0.1
+Package: com.smokin1337.blackoutcc
+Version: 0.0.3
 Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 258
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.blackout_0.0.4_iphoneos-arm.deb
-Size: 12788
-MD5sum: 674683a12c938c67fc4bae5c66c93a2a
-SHA1: 9f1d33e4ebe4c378c7e138b2edd95d27fab28bb4
-SHA256: 84ebe65cdb94f107df55773a0d8c2d5f785d88d66aabb59b039ce2e5cbe7a846
+Filename: debs/com.smokin1337.blackoutcc_0.0.3_iphoneos-arm.deb
+Size: 12226
+MD5sum: ba6c8f4c6152b4c56b6544c8aff7c754
+SHA1: 93e310e9cb5213481b2512d5d281cf35d71265ff
+SHA256: 706b1d7cbaedd6b01988b68d28f3e23e6a3831f0159f1b9c23a2e90d73559e33
 Section: Tweaks
-Description: Blackout elements of your device
+Description: Blackout the control center
 Author: smokin1337
-Name: BlackOut
+Name: BlackOutCC
 
 Package: com.smokin1337.smartlpm
 Version: 1.0.7
