@@ -1,14 +1,14 @@
 Package: com.smokin1337.smartlpm
-Version: 1.1.4
+Version: 1.1.5
 Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 274
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.smartlpm_1.1.4_iphoneos-arm.deb
-Size: 16410
-MD5sum: 2623b67fe3646375ebb2c5a6c412a73a
-SHA1: 551cbb307a73a209faf178c349a3e530c801ac25
-SHA256: 37a3c6a599442731df3ababdfaea1b2a72f53ddc086a047eb1dcf0ec0beb9e23
+Filename: debs/com.smokin1337.smartlpm_1.1.5_iphoneos-arm.deb
+Size: 16586
+MD5sum: 3e0f4cd53709e0b45e06c6951bb9ee3b
+SHA1: dd63101bffdbb9288116f24d394a6cd85543fdee
+SHA256: 4ca058f9dd9187e473f24de8d26e43ae421988c3c9f1f88409428997f196714b
 Section: Tweaks
 Description: A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Enable low power while charging.
 Author: smokin1337
