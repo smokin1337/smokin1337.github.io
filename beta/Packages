@@ -1,16 +1,16 @@
-Package: com.smokin1337.smartlpm
-Version: 1.1.5
+Package: com.smokin1337.fortnitebypass
+Version: 0.0.1-1+debug
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 274
+Installed-Size: 117
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.smartlpm_1.1.5_iphoneos-arm.deb
-Size: 16586
-MD5sum: 3e0f4cd53709e0b45e06c6951bb9ee3b
-SHA1: dd63101bffdbb9288116f24d394a6cd85543fdee
-SHA256: 4ca058f9dd9187e473f24de8d26e43ae421988c3c9f1f88409428997f196714b
+Filename: debs/com.smokin1337.fortnitebypass_0.0.1-1+debug_iphoneos-arm.deb
+Size: 3262
+MD5sum: 656e154671beb2fbbb910454e96d98b7
+SHA1: 148f448907b1bf89efc6a6c4c0a33c0a338eb751
+SHA256: 4a749fc0119cece2f367f0345f894c3d1b6d0fea1e3e4db98c1eee6a64b53168
 Section: Tweaks
-Description: A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Enable low power while charging.
+Description: Bypass jailbreak detection in Fortnite.
 Author: smokin1337
-Name: SmartLPM
+Name: fortnitebypass
 
