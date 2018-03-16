@@ -1,16 +1,16 @@
 Package: com.smokin1337.fortnitebypass
-Version: 0.0.1-1+debug
+Version: 0.0.2-1+debug
 Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 117
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.fortnitebypass_0.0.1-1+debug_iphoneos-arm.deb
-Size: 3262
-MD5sum: 656e154671beb2fbbb910454e96d98b7
-SHA1: 148f448907b1bf89efc6a6c4c0a33c0a338eb751
-SHA256: 4a749fc0119cece2f367f0345f894c3d1b6d0fea1e3e4db98c1eee6a64b53168
+Filename: debs/com.smokin1337.fortnitebypass_0.0.2-1+debug_iphoneos-arm.deb
+Size: 3496
+MD5sum: 46604a78b28ccb75ef31f0e4c3af1470
+SHA1: 6fb90a39199a040a7afe06a22e4ccdeee2c860f8
+SHA256: d78445a5747b522ba8ee8c3fadb63a904a8a01dd6bfcea8b9cf5ebeff2f93ac4
 Section: Tweaks
 Description: Bypass jailbreak detection in Fortnite.
 Author: smokin1337
-Name: fortnitebypass
+Name: FortniteBypass
 
