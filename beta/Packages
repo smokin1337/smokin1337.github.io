@@ -1,14 +1,14 @@
 Package: com.smokin1337.byebyebreadcrumbs
-Version: 0.0.7
+Version: 0.0.8
 Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 117
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.byebyebreadcrumbs_0.0.7_iphoneos-arm.deb
-Size: 2948
-MD5sum: 6d23403a3c5a99f44d1c6424c9567945
-SHA1: 24acfd7ebd18d763bbed3d6f39fda36c004b18c6
-SHA256: 937ce214b6b2f321d43f2a1ae1804a13c60627de016c92a4b5d67a25da4d044b
+Filename: debs/com.smokin1337.byebyebreadcrumbs_0.0.8_iphoneos-arm.deb
+Size: 2954
+MD5sum: e76707385f756a216823de36227d96c6
+SHA1: ac00b5f2f9c2f6c525065bab08f0826665042f7b
+SHA256: 8794c6a0e0aeab6b14383c9fdbfdd1a1b9cbd1ea1107643d4e5b8b7af797c48f
 Section: Tweaks
 Description: Hide breadcrumbs
 Author: smokin1337
