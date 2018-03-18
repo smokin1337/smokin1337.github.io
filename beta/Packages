@@ -1,16 +1,16 @@
-Package: com.smokin1337.smartlpm
-Version: 1.1.7
+Package: com.smokin1337.byebyebreadcrumbs
+Version: 0.0.1
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 274
+Installed-Size: 117
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.smartlpm_1.1.7_iphoneos-arm.deb
-Size: 16042
-MD5sum: 4e5a59ef5a4a613ed5de98179bfa3794
-SHA1: 96689e3c76e0fb1de42052cb958e0b0f8d9acbc7
-SHA256: 99350e3d5930e491d561540e0e106147f78eab61e9fd9578874efc5de3dcf91f
+Filename: debs/com.smokin1337.byebyebreadcrumbs_0.0.1_iphoneos-arm.deb
+Size: 2504
+MD5sum: cc94eca053ef7821c8211406dc579880
+SHA1: efd5c90057603834eba616866c5211a37a420e6a
+SHA256: b77460afd350fb8ad9eba9befcae5f02e146fd70842401e08bb97d4bbf8bb566
 Section: Tweaks
-Description: A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Enable low power while charging. Enable low power while locked.
+Description: Hide breadcrumbs
 Author: smokin1337
-Name: SmartLPM
+Name: ByeByeBreadcrumbs
 
