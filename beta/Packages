@@ -1,16 +1,16 @@
-Package: com.smokin1337.smartlpm
-Version: 1.2.7
+Package: com.smokin1337.blackoutcc
+Version: 0.0.7
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 274
+Installed-Size: 258
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.smartlpm_1.2.7_iphoneos-arm.deb
-Size: 15842
-MD5sum: 3167609baa14bca1fc4b641ed028a610
-SHA1: fd451bd626c0b63a7a33d741e615302d62deba55
-SHA256: b1ceba30e73e6b918ec9bd002baaf810ff587fb40926389eb291da7f3a97bd2e
+Filename: debs/com.smokin1337.blackoutcc_0.0.7_iphoneos-arm.deb
+Size: 12054
+MD5sum: 825f3c3e85fdf70d88ee65ddf3830293
+SHA1: 2302038a06a3f41cc148b5041e021d8096e618d9
+SHA256: 13bfd8dc309b6bfcefb5cf2d969e1483e8ab00d3031f2d173e9d677db16a5ae9
 Section: Tweaks
-Description: A smarter low power mode. Turn low power mode on automatically at the battery level you specify. Enable low power while charging.
+Description: Blackout the control center
 Author: smokin1337
-Name: SmartLPM
+Name: BlackOutCC
 
