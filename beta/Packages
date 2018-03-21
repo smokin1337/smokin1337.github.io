@@ -1,14 +1,14 @@
 Package: com.smokin1337.blackoutcc
-Version: 0.0.16
+Version: 0.0.17
 Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 258
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.blackoutcc_0.0.16_iphoneos-arm.deb
-Size: 12686
-MD5sum: 3019ac7be779fbaa9be85d12444f7617
-SHA1: b5904ab8b23a7b2133870304e3aad9301fcafeaa
-SHA256: 0a74335317bf0c22a7e1943beeefe0df3b266d552d1f6b2723c0170914cf76b0
+Filename: debs/com.smokin1337.blackoutcc_0.0.17_iphoneos-arm.deb
+Size: 12698
+MD5sum: b38d5b398f7207ee718079d41cfd7347
+SHA1: a05d1c7054a3e42b933f2bd6b736cab7e4ebb6c9
+SHA256: ad881d9271c3f6df5bd0d1cdc0f1dee7857ef8ea0f0499085b0c329de15d7084
 Section: Tweaks
 Description: Blackout the control center
 Author: smokin1337
