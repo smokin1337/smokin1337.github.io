@@ -1,16 +1,16 @@
-Package: com.smokin1337.timage
-Version: 0.0.1
+Package: com.smokin1337.blackoutcc
+Version: 0.0.6
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 117
+Installed-Size: 258
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.timage_0.0.1_iphoneos-arm.deb
-Size: 3150
-MD5sum: 6ba064efb7eb905fa46368a122b1d0ae
-SHA1: a20e0700c41140ff573413d80598c9aab4422195
-SHA256: 352edea23f62fa10ad6bb475bd8bd058e2410acd80e3b7b2c9b82fdd10de07b6
+Filename: debs/com.smokin1337.blackoutcc_0.0.6_iphoneos-arm.deb
+Size: 12134
+MD5sum: 7e27393a25d1e713b4c36423fdd6c476
+SHA1: d05d478c2a8a38e9104ed8c421f185fc0c574f26
+SHA256: 06ef0d3d3362e0d6ef41b378dfcdc32e7b6f56aac83075587cdffb81decc38e2
 Section: Tweaks
-Description: An awesome MobileSubstrate tweak!
+Description: Blackout the control center
 Author: smokin1337
-Name: Timage
+Name: BlackOutCC
 
