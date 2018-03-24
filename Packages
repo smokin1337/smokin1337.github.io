@@ -1,16 +1,16 @@
 Package: com.smokin1337.blackoutcc
-Version: 0.0.7
+Version: 0.0.8
 Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 262
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.blackoutcc_0.0.7_iphoneos-arm.deb
-Size: 13922
-MD5sum: 746c710fb3054f7f3fbe277510e66844
-SHA1: 73d1e3e787dbc6280dbba17f8923cf3830a65ca3
-SHA256: b5d98dd38dcdd39e0153ad79945a1c768dff9f9c93feba1709540989d2470bb9
+Filename: debs/com.smokin1337.blackoutcc_0.0.8_iphoneos-arm.deb
+Size: 14074
+MD5sum: 6b9bd161eb50d156f6854d34cda0fe1c
+SHA1: ee1a8537513c45f26f9fea72390af2c2a781cd70
+SHA256: c6db97f188be6631c202613dccecb91f0156bb2179f41634ff5c63060f9c0f49
 Section: Tweaks
-Description: Blackout the control center
+Description: Blackout the control center and folders. Also hide page dots, cc statusbar, folder labels and remove background blur.
 Author: smokin1337
 Name: BlackOutCC
 
