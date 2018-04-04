@@ -14,6 +14,22 @@ Description: Blackout the control center and folders. Also hide page dots, cc st
 Author: smokin1337
 Name: BlackOutCC
 
+Package: com.smokin1337.optix
+Version: 0.0.1b-2
+Architecture: iphoneos-arm
+Maintainer: smokin1337
+Installed-Size: 334
+Depends: mobilesubstrate
+Filename: debs/com.smokin1337.optix_0.0.1b-2_iphoneos-arm.deb
+Size: 61682
+MD5sum: dbcab5c3f40812965302afe0f8075a0a
+SHA1: 02de1de25f3212922d833d8b9b8943cce4078c35
+SHA256: b70964e691b4be0e7ea7c28e7864ece17df0b390091e22e2525ba4b3584b99c4
+Section: Tweaks
+Description: Set custom colors for various UI elements, Beta build known issues: colors reset if other switches are toggled No floating dock support yet
+Author: smokin1337
+Name: OptiX
+
 Package: com.smokin1337.smartlpm
 Version: 1.1.0
 Architecture: iphoneos-arm
