@@ -15,18 +15,18 @@ Author: smokin1337
 Name: BlackOutCC
 
 Package: com.smokin1337.optix
-Version: 0.0.1b-2
+Version: 0.0.2b-1
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 334
+Installed-Size: 240
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.optix_0.0.1b-2_iphoneos-arm.deb
-Size: 61682
-MD5sum: dbcab5c3f40812965302afe0f8075a0a
-SHA1: 02de1de25f3212922d833d8b9b8943cce4078c35
-SHA256: b70964e691b4be0e7ea7c28e7864ece17df0b390091e22e2525ba4b3584b99c4
+Filename: debs/com.smokin1337.optix_0.0.2b-1_iphoneos-arm.deb
+Size: 59320
+MD5sum: d2dd7f5909a74e336a0cad5a377c547a
+SHA1: c0918d534fc2c8995a1e46728bbf1ddf430929fa
+SHA256: 33292007770b5faa4384fe0b00dadbfd8f5f19b8b218921a928acc9402ef874e
 Section: Tweaks
-Description: Set custom colors for various UI elements, Beta build known issues: colors reset if other switches are toggled No floating dock support yet
+Description: Set custom colors for various UI elements, Set colors for folders, control center background, control center modules and a custom dock. Can also edit corner radius for dock and modules.
 Author: smokin1337
 Name: OptiX
 
