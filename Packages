@@ -15,34 +15,34 @@ Author: smokin1337
 Name: BlackOutCC
 
 Package: com.smokin1337.fdots
-Version: 1.0.0-1
+Version: 1.0.0-4
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 220
+Installed-Size: 224
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.fdots_1.0.0-1_iphoneos-arm.deb
-Size: 47686
-MD5sum: 407c002fd57c56cb36236a522ec47594
-SHA1: ceba3e33359b2b3191d8211b165264518b90ea5d
-SHA256: dedd85b8e94de35a530b685e195cbf3204a790fa98e87763aecf5df0916646d4
+Filename: debs/com.smokin1337.fdots_1.0.0-4_iphoneos-arm.deb
+Size: 47880
+MD5sum: fafa2fc9e61e8e7cc7451cb586d17060
+SHA1: a8462e4c511cc6003e776d69575e5b36e90a1403
+SHA256: 70e805771a38169081c8d7758d94723ca6250fb0c9fd02ab9af919d499b5851c
 Section: Tweaks
-Description: An awesome MobileSubstrate tweak!
+Description: Hide annoying dots. Hides badges, update, beta and page dots.
 Author: smokin1337
 Name: FDots
 
 Package: com.smokin1337.optix
-Version: 0.0.2b-1
+Version: 0.0.1b-2
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 240
+Installed-Size: 334
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.optix_0.0.2b-1_iphoneos-arm.deb
-Size: 59320
-MD5sum: d2dd7f5909a74e336a0cad5a377c547a
-SHA1: c0918d534fc2c8995a1e46728bbf1ddf430929fa
-SHA256: 33292007770b5faa4384fe0b00dadbfd8f5f19b8b218921a928acc9402ef874e
+Filename: debs/com.smokin1337.optix_0.0.1b-2_iphoneos-arm.deb
+Size: 61682
+MD5sum: dbcab5c3f40812965302afe0f8075a0a
+SHA1: 02de1de25f3212922d833d8b9b8943cce4078c35
+SHA256: b70964e691b4be0e7ea7c28e7864ece17df0b390091e22e2525ba4b3584b99c4
 Section: Tweaks
-Description: Set custom colors for various UI elements, Set colors for folders, control center background, control center modules and a custom dock. Can also edit corner radius for dock and modules.
+Description: Set custom colors for various UI elements, Beta build known issues: colors reset if other switches are toggled No floating dock support yet
 Author: smokin1337
 Name: OptiX
 
