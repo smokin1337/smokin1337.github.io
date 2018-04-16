@@ -31,18 +31,18 @@ Author: smokin1337
 Name: FDots
 
 Package: com.smokin1337.optix
-Version: 0.0.1b-2
+Version: 0.0.3b-4
 Architecture: iphoneos-arm
 Maintainer: smokin1337
-Installed-Size: 334
+Installed-Size: 240
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.optix_0.0.1b-2_iphoneos-arm.deb
-Size: 61682
-MD5sum: dbcab5c3f40812965302afe0f8075a0a
-SHA1: 02de1de25f3212922d833d8b9b8943cce4078c35
-SHA256: b70964e691b4be0e7ea7c28e7864ece17df0b390091e22e2525ba4b3584b99c4
+Filename: debs/com.smokin1337.optix_0.0.3b-4_iphoneos-arm.deb
+Size: 59372
+MD5sum: 7516ee7f526fb4c3ac390b63070e1aff
+SHA1: 81ac573a9da54dece88d67d53dcb1d407f5dac7c
+SHA256: 4d380d43ad223049b28a7e42249b46560d170f6a7b50f9594d84d113eab02575
 Section: Tweaks
-Description: Set custom colors for various UI elements, Beta build known issues: colors reset if other switches are toggled No floating dock support yet
+Description: Set custom colors for various UI elements, Set colors for folders, control center background, control center modules and a custom dock. Can also edit corner radius for dock and modules.
 Author: smokin1337
 Name: OptiX
 
