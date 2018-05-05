@@ -47,16 +47,16 @@ Author: smokin1337
 Name: OptiX
 
 Package: com.smokin1337.smartlpm
-Version: 1.1.3
+Version: 1.1.3-8
 Architecture: iphoneos-arm
 Maintainer: smokin1337
 Installed-Size: 236
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.smartlpm_1.1.3_iphoneos-arm.deb
-Size: 57102
-MD5sum: 4fa6130922d3a02e098a2d03fa4fa367
-SHA1: 11f7b475efd038e8c040624f9d33b48374df5219
-SHA256: ed872f1cf1cd626d4bcf89d133ed8c8fe2bf1d363df635d9e3f8f4014a81a1fc
+Filename: debs/com.smokin1337.smartlpm_1.1.3-8_iphoneos-arm.deb
+Size: 56886
+MD5sum: 15856f9a865bd4d7dedba1c4edeffae4
+SHA1: 840f22b86b332750c642414dd3957da6fd28b702
+SHA256: c701943f83f14de01a0e0ada5275ca2ce454346afe43a66c8d15521c97afa229
 Section: Tweaks
 Description: A smarter low power mode. Low power while device is locked. Turn low power mode on automatically at the battery level you specify. Enable low power while charging. 1.1.3: Added disable low power alert added no auotlock on LPM.
 Author: smokin1337
