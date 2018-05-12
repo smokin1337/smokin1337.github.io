@@ -30,6 +30,22 @@ Description: Hide annoying dots. Hides badges, update, beta and page dots.
 Author: smokin1337
 Name: FDots
 
+Package: com.smokin1337.hush
+Version: 0.0.2-1
+Architecture: iphoneos-arm
+Maintainer: smokin1337
+Installed-Size: 228
+Depends: mobilesubstrate
+Filename: debs/com.smokin1337.hush_0.0.2-1_iphoneos-arm.deb
+Size: 50238
+MD5sum: 16a05942814b953fb64642c697edeb33
+SHA1: 5cc4b2973822cb9b76840cdb9765366d4e6c56cf
+SHA256: a71c92d29ff39db668e7495575c713a7b20fd4f500eceb27fe9bfe6558012d6d
+Section: Tweaks
+Description: Flip device face down to turn on do not disturb.
+Author: smokin1337
+Name: Hush
+
 Package: com.smokin1337.optix
 Version: 0.0.3b-4
 Architecture: iphoneos-arm
