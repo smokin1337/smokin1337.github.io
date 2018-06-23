@@ -1,14 +1,14 @@
 Package: com.smokin1337.haplock
-Version: 0.0.1-7
+Version: 0.0.1-11
 Architecture: iphoneos-arm
 Maintainer: smokion1337
 Installed-Size: 412
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.haplock_0.0.1-7_iphoneos-arm.deb
-Size: 165910
-MD5sum: a9582353532f0ee16e6c7055ca8c1114
-SHA1: 9bccdfbd72bbaf0541a54d7921b24b05deb0440c
-SHA256: 02075fdeee07f3f867e5450514ce5a1068e569979d02e7d8e25907995bf4c7f8
+Filename: debs/com.smokin1337.haplock_0.0.1-11_iphoneos-arm.deb
+Size: 166012
+MD5sum: ae12d01c5ad4b2b3acc2bce7fdded49f
+SHA1: c76b87920be92038428837b01697324ea2c742ff
+SHA256: 2f8e117cadb39dd6ad597260c9608d888824810e2c24d833fc3106e039aec310
 Section: Tweaks
 Description: Haptic feedback when unlocked
 Author: smokion1337
