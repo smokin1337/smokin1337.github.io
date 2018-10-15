@@ -1,16 +1,17 @@
-Package: com.smokin1337.haplock
-Version: 0.0.1-11
+Package: com.smokin1337.privasee
+Version: 1.0.1
 Architecture: iphoneos-arm
-Maintainer: smokion1337
-Installed-Size: 412
+Maintainer: smokin1337
+Installed-Size: 2176
+Pre-Depends: com.spark.libsparkapplist, org.thebigboss.libcolorpicker
 Depends: mobilesubstrate
-Filename: debs/com.smokin1337.haplock_0.0.1-11_iphoneos-arm.deb
-Size: 166012
-MD5sum: ae12d01c5ad4b2b3acc2bce7fdded49f
-SHA1: c76b87920be92038428837b01697324ea2c742ff
-SHA256: 2f8e117cadb39dd6ad597260c9608d888824810e2c24d833fc3106e039aec310
+Filename: debs/com.smokin1337.privasee_1.0.1_iphoneos-arm.deb
+Size: 1179994
+MD5sum: 92774ecd45829bfd80896096b78fe4c0
+SHA1: 31e74059d03aad4d77983df904af46fca454a2a9
+SHA256: 230741e4ce3dbb80a5b6c4dcdeb57dd3d82cc04386371b33505ed63b766cbdfa
 Section: Tweaks
-Description: Haptic feedback when unlocked
-Author: smokion1337
-Name: HapLock
+Description: Protect your privacy !!
+Author: smokin1337
+Name: PrivaSee
 
