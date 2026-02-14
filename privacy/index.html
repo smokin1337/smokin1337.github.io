@@ -1,108 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Privacy Policy – PeopleDrop</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px auto;
-            max-width: 800px;
-            padding: 0 20px;
-            color: #111;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 20px;
-            margin-top: 32px;
-            margin-bottom: 8px;
-        }
-        p {
-            margin: 8px 0;
-        }
-        ul {
-            margin: 8px 0 8px 20px;
-        }
-        footer {
-            margin-top: 48px;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – PeopleDrop</title>
+  <meta name="description" content="PeopleDrop Privacy Policy" />
+  <meta name="theme-color" content="#0b0b10" />
+
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --card:#12121a;
+      --muted:#a7a7b5;
+      --text:#f3f3f7;
+      --line: rgba(255,255,255,.10);
+      --shadow: 0 20px 60px rgba(0,0,0,.45);
+      --radius: 22px;
+      --radius2: 16px;
+      --max: 1100px;
+
+      --gradA:#6a5cff;
+      --gradB:#22d3ee;
+      --gradC:#a855f7;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height:1.65;
+      background:
+        radial-gradient(1200px 600px at 10% 0%, rgba(106,92,255,.28), transparent 55%),
+        radial-gradient(900px 500px at 90% 15%, rgba(34,211,238,.20), transparent 60%),
+        radial-gradient(900px 500px at 60% 100%, rgba(168,85,247,.18), transparent 55%),
+        var(--bg);
+      color: var(--text);
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 20px 80px}
+
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+      padding:14px 16px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background: rgba(18,18,26,.50);
+      backdrop-filter: blur(10px);
+      position:sticky; top:16px; z-index:10;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px;}
+    .logo{
+      width:34px; height:34px; border-radius:12px;
+      background: linear-gradient(135deg, var(--gradA), var(--gradB), var(--gradC));
+      box-shadow: 0 10px 30px rgba(106,92,255,.25);
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .navlinks{display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+    .pill{
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      font-size:14px;
+    }
+    .pill:hover{background: rgba(255,255,255,.07)}
+    .cta{
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background: linear-gradient(135deg, rgba(106,92,255,.95), rgba(34,211,238,.85));
+      color:#0b0b10;
+      font-weight:800;
+    }
+    .cta:hover{filter:brightness(1.05)}
+
+    .page{
+      margin-top:22px;
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(18,18,26,.55);
+      backdrop-filter: blur(12px);
+      box-shadow: var(--shadow);
+      padding:26px;
+    }
+    h1{margin:0 0 8px; font-size: 34px; letter-spacing:-.4px; line-height:1.15;}
+    .sub{margin:0 0 18px; color: var(--muted); font-size: 14px;}
+    h2{margin:22px 0 8px; font-size: 18px; letter-spacing:-.2px;}
+    p{margin:10px 0; color: rgba(243,243,247,.92);}
+    ul{margin:10px 0 10px 20px; color: rgba(243,243,247,.92);}
+    li{margin:6px 0}
+    .divider{margin:18px 0; border:0; height:1px; background: var(--line);}
+
+    footer{
+      margin-top:28px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:space-between;
+      align-items:center;
+      color: rgba(243,243,247,.70);
+      font-size:14px;
+      padding-top:18px;
+      border-top:1px solid var(--line);
+    }
+    .footlinks{display:flex; gap:14px; flex-wrap:wrap}
+    .footlinks a{color: rgba(243,243,247,.80)}
+    .footlinks a:hover{text-decoration:underline}
+  </style>
 </head>
+
 <body>
+  <div class="wrap">
 
-<h1>Privacy Policy</h1>
-<p><strong>Last updated:</strong> February 2026</p>
+    <header class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <span>PeopleDrop</span>
+      </a>
+      <nav class="navlinks">
+        <a class="pill" href="/">Home</a>
+        <a class="pill" href="/support">Support</a>
+        <a class="pill" href="/privacy">Privacy</a>
+        <!-- Replace # with your App Store URL -->
+        <a class="cta" href="#" rel="noopener">Download</a>
+      </nav>
+    </header>
 
-<p>
-    PeopleDrop respects your privacy. This Privacy Policy explains how information is handled when you use the PeopleDrop app.
-</p>
+    <main class="page">
+      <h1>Privacy Policy</h1>
+      <p class="sub"><strong>Last updated:</strong> February 2026</p>
 
-<h2>Information You Provide</h2>
-<p>
-    PeopleDrop allows you to create and manage contact profiles that may include personal information such as your name,
-    phone number, email address, company, job title, websites, and other details you choose to add.
-</p>
-<p>
-    All information is entered voluntarily by you and remains stored locally on your device unless you choose to share it.
-</p>
+      <hr class="divider" />
 
-<h2>Camera Usage</h2>
-<p>
-    PeopleDrop may request access to your device’s camera solely to allow you to take a profile photo.
-    Camera access is optional and is not used for video recording or scanning.
-    Profile photos remain on your device.
-</p>
+      <!-- KEEP YOUR VERBIAGE THE SAME: paste your existing Privacy Policy text below -->
+      <p>
+        PeopleDrop respects your privacy. This Privacy Policy explains how information is handled when you use the PeopleDrop app.
+      </p>
 
-<h2>How Your Information Is Used</h2>
-<p>
-    Your information is used only to provide the app’s core functionality, including:
-</p>
-<ul>
-    <li>Creating and managing contact profiles</li>
-    <li>Sharing contact information via QR codes, share sheets, or vCards</li>
-</ul>
+      <h2>Information You Provide</h2>
+      <p>
+        PeopleDrop allows you to create and manage contact profiles that may include personal information such as your name,
+        phone number, email address, company, job title, websites, and other details you choose to add.
+      </p>
+      <p>
+        All information is entered voluntarily by you and remains stored locally on your device unless you choose to share it.
+      </p>
 
-<h2>Data Storage</h2>
-<p>
-    PeopleDrop does not create user accounts and does not store personal data on external servers.
-    All profile information remains on your device unless you choose to share it.
-</p>
+      <h2>Camera Usage</h2>
+      <p>
+        PeopleDrop may request access to your device’s camera solely to allow you to take a profile photo.
+        Camera access is optional and is not used for video recording or scanning. Profile photos remain on your device.
+      </p>
 
-<h2>Data Sharing</h2>
-<p>
-    PeopleDrop does not sell, rent, or trade your personal information.
-    Data is shared only when you explicitly choose to share it using the app’s features.
-</p>
+      <h2>How Your Information Is Used</h2>
+      <p>Your information is used only to provide the app’s core functionality, including:</p>
+      <ul>
+        <li>Creating and managing contact profiles</li>
+        <li>Sharing contact information via QR codes, share sheets, or vCards</li>
+      </ul>
 
-<h2>Analytics and Tracking</h2>
-<p>
-    PeopleDrop does not track users across apps or websites and does not collect analytics data.
-</p>
+      <h2>Data Storage</h2>
+      <p>
+        PeopleDrop does not create user accounts and does not store personal data on external servers.
+        All profile information remains on your device unless you choose to share it.
+      </p>
 
-<h2>Your Choices</h2>
-<p>
-    You are always in control of the information you add, edit, or delete within PeopleDrop.
-    You can also revoke camera permissions at any time through iOS system settings.
-</p>
+      <h2>Data Sharing</h2>
+      <p>
+        PeopleDrop does not sell, rent, or trade your personal information.
+        Data is shared only when you explicitly choose to share it using the app’s features.
+      </p>
 
-<h2>Contact</h2>
-<p>
-    If you have questions about this Privacy Policy, contact:
-</p>
-<p>
-    <strong>Email:</strong> <a href="mailto:support@peopledrop.me">support@peopledrop.me</a>
-</p>
+      <h2>Analytics and Tracking</h2>
+      <p>
+        PeopleDrop does not track users across apps or websites and does not collect analytics data.
+      </p>
 
-<footer>
-    © 2026 PeopleDrop
-</footer>
+      <h2>Your Choices</h2>
+      <p>
+        You are always in control of the information you add, edit, or delete within PeopleDrop.
+        You can also revoke camera permissions at any time through iOS system settings.
+      </p>
 
+      <h2>Contact</h2>
+      <p>If you have questions about this Privacy Policy, contact:</p>
+      <p><strong>Email:</strong> <a href="mailto:support@peopledrop.me">support@peopledrop.me</a></p>
+
+      <footer>
+        <div>© <span id="y"></span> PeopleDrop</div>
+        <div class="footlinks">
+          <a href="/support">Support</a>
+          <a href="/privacy">Privacy</a>
+          <!-- Replace # with your App Store URL -->
+          <a href="#" rel="noopener">App Store</a>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
