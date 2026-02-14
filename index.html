@@ -379,7 +379,16 @@
     }
     .badge:hover{background: rgba(255,255,255,.09); transform: translateY(-1px);}
     .badge small{display:block; font-weight:600; opacity:.8}
-  </style>
+  
+    .appstore-badge{display:inline-flex; align-items:center}
+    .appstore-badge img{height:56px; width:auto; display:block}
+    .appstore-badge.small img{height:54px}
+    .appstore-badge:hover{filter:brightness(1.03)}
+    @media (max-width: 420px){
+      .appstore-badge img{height:52px}
+      .appstore-badge.small img{height:50px}
+    }
+</style>
 </head>
 <body>
   <div class="wrap">
@@ -394,7 +403,7 @@
         <a class="pill" href="#how">How it works</a>
         <a class="pill" href="/support">Support</a>
         <a class="pill" href="/privacy">Privacy</a>
-        <a class="cta" href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener">Download</a>
+        <a class="cta" href="https://apps.apple.com/us/app/id6758866482" target="_blank" rel="noopener noreferrer">Download</a>
       </nav>
     </header>
 
@@ -408,7 +417,7 @@
         </p>
 
         <div class="btnrow">
-          <a class="btn primary" href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener">Download on the App Store</a>
+          <a class="appstore-badge" href="https://apps.apple.com/us/app/id6758866482" target="_blank" rel="noopener noreferrer"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a>
           <a class="btn" href="#how">See how it works</a>
         </div>
 
@@ -429,10 +438,7 @@
           </div>
         </div>
         <div style="margin-top:14px; display:flex; gap:12px; flex-wrap:wrap;">
-          <a class="badge" href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener" aria-label="Open PeopleDrop on the App Store">
-            App Store
-            <small>Open listing</small>
-          </a>
+          <a class="appstore-badge small" href="https://apps.apple.com/us/app/id6758866482" target="_blank" rel="noopener noreferrer"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a>
           <a class="pill" href="/privacy">Privacy-first</a>
         </div>
       </aside>
@@ -504,7 +510,7 @@
       <div class="footlinks">
         <a href="/privacy">Privacy Policy</a>
         <a href="/support">Support</a>
-        <a href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener">App Store</a>
+        <a href="https://apps.apple.com/us/app/id6758866482" target="_blank" rel="noopener noreferrer">App Store</a>
       </div>
     </footer>
   </div>
