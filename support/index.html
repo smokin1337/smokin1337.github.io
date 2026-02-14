@@ -8,95 +8,152 @@
   <meta name="theme-color" content="#0b0b10" />
 
   <style>
-    /* Same styling as privacy + landing */
     :root{
       --bg:#0b0b10;
+      --card:#12121a;
       --muted:#a7a7b5;
       --text:#f3f3f7;
       --line: rgba(255,255,255,.10);
       --shadow: 0 20px 60px rgba(0,0,0,.45);
       --radius: 22px;
-      --gradA:#6a5cff;
-      --gradB:#22d3ee;
-      --gradC:#a855f7;
+      --radius2: 16px;
       --max: 1100px;
+
+      /* PeopleDrop icon-matched gradient */
+      --gradA:#3B2CCF;   /* deep indigo */
+      --gradB:#4F46E5;   /* electric blue */
+      --gradC:#B832E3;   /* magenta glow */
     }
+
     *{box-sizing:border-box}
     html,body{height:100%}
+
     body{
       margin:0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height:1.65;
+
+      /* Base background (static) */
       background:
-        radial-gradient(1200px 600px at 10% 0%, rgba(106,92,255,.28), transparent 55%),
-        radial-gradient(900px 500px at 90% 15%, rgba(34,211,238,.20), transparent 60%),
-        radial-gradient(900px 500px at 60% 100%, rgba(168,85,247,.18), transparent 55%),
-        var(--bg);
+        radial-gradient(circle at 30% 85%, rgba(184,50,227,.65) 0%, transparent 48%),
+        radial-gradient(circle at 75% 20%, rgba(79,70,229,.55) 0%, transparent 60%),
+        linear-gradient(135deg, #2A1FA8 0%, #4F46E5 52%, #3B2CCF 100%);
+
       color: var(--text);
+
+      position: relative;
+      overflow-x: hidden;
     }
+
+    /* Subtle animated gradient movement (matches landing) */
+    body::before{
+      content:"";
+      position: fixed;
+      inset: -30%;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 30% 85%, rgba(184,50,227,.55) 0%, transparent 48%),
+        radial-gradient(circle at 75% 20%, rgba(79,70,229,.50) 0%, transparent 60%),
+        linear-gradient(135deg, #2A1FA8 0%, #4F46E5 52%, #3B2CCF 100%);
+      filter: blur(10px);
+      transform: translate3d(0,0,0);
+      animation: bgFloat 18s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+
+    @keyframes bgFloat{
+      0%   { transform: translate3d(-1.5%, -1.0%, 0) scale(1.02); }
+      100% { transform: translate3d( 1.5%,  1.0%, 0) scale(1.04); }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      body::before{ animation: none; }
+      .pill, .cta{ transition: none !important; }
+    }
+
     a{color:inherit; text-decoration:none}
     .wrap{max-width:var(--max); margin:0 auto; padding:28px 20px 80px}
 
+    /* Glassy iOS-style depth (matches landing) */
     .nav{
       display:flex; align-items:center; justify-content:space-between;
       gap:14px;
       padding:14px 16px;
-      border:1px solid var(--line);
+      border:1px solid rgba(255,255,255,.12);
       border-radius:999px;
-      background: rgba(18,18,26,.50);
-      backdrop-filter: blur(10px);
+      background: rgba(18,18,26,.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       position:sticky; top:16px; z-index:10;
+      box-shadow: 0 18px 55px rgba(0,0,0,.35);
     }
+
     .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px;}
-    .logo-img {
-        width: 38px;
-        height: 38px;
-        border-radius: 12px;        /* rounds corners */
-        object-fit: cover;          /* trims properly */
-        object-position: center;    /* centers crop */
-        display: block;
-      }
+
+    .logo-img{
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: 0 10px 26px rgba(0,0,0,.35);
+    }
+
     .navlinks{display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
+
     .pill{
       padding:10px 12px;
       border-radius:999px;
-      border:1px solid var(--line);
+      border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.04);
       font-size:14px;
+      transition: background .15s ease;
     }
     .pill:hover{background: rgba(255,255,255,.07)}
+
     .cta{
       padding:10px 14px;
       border-radius:999px;
       border:1px solid rgba(255,255,255,.16);
-      background: linear-gradient(135deg, rgba(106,92,255,.95), rgba(34,211,238,.85));
+      background: linear-gradient(135deg, var(--gradA), var(--gradB), var(--gradC));
       color:#0b0b10;
       font-weight:800;
+      transition: filter .15s ease, transform .15s ease;
     }
+    .cta:hover{filter:brightness(1.05); transform: translateY(-1px);}
 
     .page{
       margin-top:22px;
-      border:1px solid var(--line);
+      border:1px solid rgba(255,255,255,.14);
       border-radius: var(--radius);
-      background: rgba(18,18,26,.55);
-      backdrop-filter: blur(12px);
-      box-shadow: var(--shadow);
+      background: rgba(18,18,26,.60);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow:
+        var(--shadow),
+        0 0 90px rgba(79,70,229,.14),
+        0 0 110px rgba(184,50,227,.08);
       padding:26px;
     }
-    h1{margin:0 0 8px; font-size: 34px; letter-spacing:-.4px; line-height:1.15;}
-    .sub{margin:0 0 18px; color: var(--muted); font-size: 14px;}
+
+    h1{margin:0 0 8px; font-size: 34px; letter-spacing:-.4px; line-height:1.15; text-shadow: 0 2px 18px rgba(0,0,0,.35);}
+    .sub{margin:0 0 18px; color: rgba(243,243,247,.78); font-size: 14px;}
     h2{margin:22px 0 8px; font-size: 18px; letter-spacing:-.2px;}
     p{margin:10px 0; color: rgba(243,243,247,.92);}
     ul{margin:10px 0 10px 20px; color: rgba(243,243,247,.92);}
     li{margin:6px 0}
-    .divider{margin:18px 0; border:0; height:1px; background: var(--line);}
+    .divider{margin:18px 0; border:0; height:1px; background: rgba(255,255,255,.14);}
+
     .card{
-      border:1px solid var(--line);
+      border:1px solid rgba(255,255,255,.14);
       border-radius: 16px;
       background: rgba(255,255,255,.04);
       padding:14px 16px;
       margin:12px 0;
     }
+
     footer{
       margin-top:28px;
       display:flex;
@@ -107,7 +164,7 @@
       color: rgba(243,243,247,.70);
       font-size:14px;
       padding-top:18px;
-      border-top:1px solid var(--line);
+      border-top:1px solid rgba(255,255,255,.14);
     }
     .footlinks{display:flex; gap:14px; flex-wrap:wrap}
     .footlinks a{color: rgba(243,243,247,.80)}
@@ -127,7 +184,6 @@
         <a class="pill" href="/">Home</a>
         <a class="pill" href="/support">Support</a>
         <a class="pill" href="/privacy">Privacy</a>
-        <!-- Replace # with your App Store URL -->
         <a class="cta" href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener">Download</a>
       </nav>
     </header>
@@ -138,7 +194,7 @@
 
       <hr class="divider" />
 
-      <!-- KEEP YOUR VERBIAGE THE SAME: paste your existing Support page content below -->
+      <!-- KEEP YOUR VERBIAGE THE SAME -->
       <div class="card">
         <h2 style="margin-top:0;">Contact</h2>
         <p>Email: <a href="mailto:support@peopledrop.me">support@peopledrop.me</a></p>
@@ -153,15 +209,11 @@
         </ul>
       </div>
 
-      <!-- If your existing support page already has different wording,
-           replace the cards above with your exact text. -->
-
       <footer>
         <div>© <span id="y"></span> PeopleDrop</div>
         <div class="footlinks">
           <a href="/support">Support</a>
           <a href="/privacy">Privacy</a>
-          <!-- Replace # with your App Store URL -->
           <a href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener">App Store</a>
         </div>
       </footer>
