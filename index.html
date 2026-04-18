@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xplAIned — Your Personal AI Tutor</title>
+  <meta name="description" content="Ask anything about AI. Every model explained, updated daily. Available on iPhone." />
+  <meta property="og:title" content="xplAIned — Your Personal AI Tutor" />
+  <meta property="og:description" content="Ask anything about AI. Every model explained, updated daily." />
+  <meta property="og:image" content="https://getxplained.com/og.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0A0A0F;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Grid background */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 680px;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 96px 0 80px;
+      text-align: center;
+    }
+
+    .icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #1A0A4A, #0A0A0F);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      box-shadow: 0 0 40px rgba(91,61,239,0.4);
+      font-size: 48px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 52px);
+      font-weight: 700;
+      letter-spacing: -1px;
+      background: linear-gradient(135deg, #fff 40%, #A0A0C0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 auto 40px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, #5B8DEF, #A78BFA);
+      color: #000;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .cta:hover { opacity: 0.85; }
+    .cta svg { width: 20px; height: 20px; }
+
+    /* Features */
+    .features {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      padding-bottom: 80px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .feature-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .feature h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .feature p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.5;
+    }
+
+    /* Pricing strip */
+    .pricing {
+      width: 100%;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .pricing h2 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .pricing p {
+      color: rgba(255,255,255,0.45);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .plans {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 16px 24px;
+      min-width: 160px;
+    }
+
+    .plan.featured {
+      border-color: rgba(91,141,239,0.5);
+      background: rgba(91,141,239,0.08);
+    }
+
+    .plan-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 6px;
+    }
+
+    .plan.featured .plan-label {
+      color: #5B8DEF;
+    }
+
+    .plan-price {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .plan-period {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 2px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(52,211,153,0.15);
+      color: #34D399;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-top: 6px;
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 28px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: rgba(255,255,255,0.25);
+      position: relative;
+      z-index: 1;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    footer a:hover { color: rgba(255,255,255,0.6); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="icon">💡</div>
+      <h1>Your personal<br>AI tutor.</h1>
+      <p class="subtitle">Ask anything about AI. Every model explained with real pricing and specs, updated daily as the landscape shifts.</p>
+      <a class="cta" href="https://apps.apple.com/app/xplained/id000000000">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on the App Store
+      </a>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">✨</div>
+        <h3>Ask anything</h3>
+        <p>Plain English answers to any AI question. No jargon, no fluff — just clear explanations tailored to you.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Every model, explained</h3>
+        <p>Browse GPT, Claude, Gemini, Llama, Grok and more — with real pricing, context windows, and what each is actually best for.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔄</div>
+        <h3>Updated daily</h3>
+        <p>New models added the day they drop. Pricing and specs refresh automatically so you're never reading stale info.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📖</div>
+        <h3>Learn the concepts</h3>
+        <p>LLMs, RAG, fine-tuning, agents, embeddings — clear explainers written for real people, not researchers.</p>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <h2>Simple pricing</h2>
+      <p>Start free. Upgrade when you're ready.</p>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-label">Free</div>
+          <div class="plan-price">$0</div>
+          <div class="plan-period">3 AI questions/day</div>
+        </div>
+        <div class="plan featured">
+          <div class="plan-label">Annual · Most Popular</div>
+          <div class="plan-price">$1.67<span style="font-size:14px;font-weight:400">/mo</span></div>
+          <div class="plan-period">$19.99 billed yearly</div>
+          <div class="badge">Save 44%</div>
+        </div>
+        <div class="plan">
+          <div class="plan-label">Monthly</div>
+          <div class="plan-price">$2.99<span style="font-size:14px;font-weight:400">/mo</span></div>
+          <div class="plan-period">Unlimited questions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div style="margin-bottom:12px">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/support">Support</a>
+    </div>
+    © 2026 xplAIned. All rights reserved.
+  </footer>
+</body>
+</html>

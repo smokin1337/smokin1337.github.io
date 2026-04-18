@@ -1,259 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy – PeopleDrop</title>
-  <meta name="description" content="PeopleDrop Privacy Policy" />
-  <meta name="theme-color" content="#0b0b10" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — xplAIned</title>
   <style>
-    :root{
-      --bg:#0b0b10;
-      --card:#12121a;
-      --muted:#a7a7b5;
-      --text:#f3f3f7;
-      --line: rgba(255,255,255,.10);
-      --shadow: 0 20px 60px rgba(0,0,0,.45);
-      --radius: 22px;
-      --radius2: 16px;
-      --max: 1100px;
-
-      /* PeopleDrop icon-matched gradient */
-      --gradA:#3B2CCF;   /* deep indigo */
-      --gradB:#4F46E5;   /* electric blue */
-      --gradC:#B832E3;   /* magenta glow */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0A0A0F;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-
-    body{
-      margin:0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height:1.65;
-
-      /* Base background (static) */
-      background:
-        radial-gradient(circle at 30% 85%, rgba(184,50,227,.65) 0%, transparent 48%),
-        radial-gradient(circle at 75% 20%, rgba(79,70,229,.55) 0%, transparent 60%),
-        linear-gradient(135deg, #2A1FA8 0%, #4F46E5 52%, #3B2CCF 100%);
-
-      color: var(--text);
-
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    /* Subtle animated gradient movement (matches landing) */
-    body::before{
-      content:"";
+    body::before {
+      content: "";
       position: fixed;
-      inset: -30%;
-      z-index: -1;
-      background:
-        radial-gradient(circle at 30% 85%, rgba(184,50,227,.55) 0%, transparent 48%),
-        radial-gradient(circle at 75% 20%, rgba(79,70,229,.50) 0%, transparent 60%),
-        linear-gradient(135deg, #2A1FA8 0%, #4F46E5 52%, #3B2CCF 100%);
-      filter: blur(10px);
-      transform: translate3d(0,0,0);
-      animation: bgFloat 18s ease-in-out infinite alternate;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
       pointer-events: none;
+      z-index: 0;
     }
-
-    @keyframes bgFloat{
-      0%   { transform: translate3d(-1.5%, -1.0%, 0) scale(1.02); }
-      100% { transform: translate3d( 1.5%,  1.0%, 0) scale(1.04); }
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 640px;
+      padding: 80px 24px;
     }
-
-    @media (prefers-reduced-motion: reduce){
-      body::before{ animation: none; }
-      .pill, .cta{ transition: none !important; }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 40px;
     }
-
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 20px 80px}
-
-    /* Glassy iOS-style depth (matches landing) */
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px;
-      padding:14px 16px;
-      border:1px solid rgba(255,255,255,.12);
-      border-radius:999px;
-      background: rgba(18,18,26,.55);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      position:sticky; top:16px; z-index:10;
-      box-shadow: 0 18px 55px rgba(0,0,0,.35);
+    .back:hover { color: rgba(255,255,255,0.6); }
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #fff 40%, #A0A0C0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
     }
-
-    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px;}
-
-    .logo-img{
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-      border: 1px solid rgba(255,255,255,.10);
-      box-shadow: 0 10px 26px rgba(0,0,0,.35);
+    .updated {
+      color: rgba(255,255,255,0.3);
+      font-size: 13px;
+      margin-bottom: 48px;
     }
-
-    .navlinks{display:flex; gap:14px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
-
-    .pill{
-      padding:10px 12px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.04);
-      font-size:14px;
-      transition: background .15s ease;
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 32px 0 10px;
+      color: #fff;
     }
-    .pill:hover{background: rgba(255,255,255,.07)}
-
-    .cta{
-      padding:10px 14px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.16);
-      background: linear-gradient(135deg, var(--gradA), var(--gradB), var(--gradC));
-      color:#0b0b10;
-      font-weight:800;
-      transition: filter .15s ease, transform .15s ease;
+    p, li {
+      font-size: 15px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.75;
     }
-    .cta:hover{filter:brightness(1.05); transform: translateY(-1px);}
-
-    .page{
-      margin-top:22px;
-      border:1px solid rgba(255,255,255,.14);
-      border-radius: var(--radius);
-      background: rgba(18,18,26,.60);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      box-shadow:
-        var(--shadow),
-        0 0 90px rgba(79,70,229,.14),
-        0 0 110px rgba(184,50,227,.08);
-      padding:26px;
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #5B8DEF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.2);
+      text-align: center;
     }
-
-    h1{margin:0 0 8px; font-size: 34px; letter-spacing:-.4px; line-height:1.15; text-shadow: 0 2px 18px rgba(0,0,0,.35);}
-    .sub{margin:0 0 18px; color: rgba(243,243,247,.78); font-size: 14px;}
-    h2{margin:22px 0 8px; font-size: 18px; letter-spacing:-.2px;}
-    p{margin:10px 0; color: rgba(243,243,247,.92);}
-    ul{margin:10px 0 10px 20px; color: rgba(243,243,247,.92);}
-    li{margin:6px 0}
-    .divider{margin:18px 0; border:0; height:1px; background: rgba(255,255,255,.14);}
-
-    footer{
-      margin-top:28px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      justify-content:space-between;
-      align-items:center;
-      color: rgba(243,243,247,.70);
-      font-size:14px;
-      padding-top:18px;
-      border-top:1px solid rgba(255,255,255,.14);
-    }
-    .footlinks{display:flex; gap:14px; flex-wrap:wrap}
-    .footlinks a{color: rgba(243,243,247,.80)}
-    .footlinks a:hover{text-decoration:underline}
+    footer a { color: rgba(255,255,255,0.3); text-decoration: none; margin: 0 10px; }
   </style>
 </head>
-
 <body>
   <div class="wrap">
+    <a class="back" href="/">← xplAIned</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: April 2026</p>
 
-    <header class="nav" aria-label="Primary navigation">
-      <a class="brand" href="/">
-        <img src="/assets/logo.png" alt="PeopleDrop logo" class="logo-img">
-        <span>PeopleDrop</span>
-      </a>
-      <nav class="navlinks">
-        <a class="pill" href="/">Home</a>
-        <a class="pill" href="/support">Support</a>
-        <a class="pill" href="/privacy">Privacy</a>
-        <a class="cta" href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener">Download</a>
-      </nav>
-    </header>
+    <p>xplAIned ("we", "our", or "us") is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights.</p>
 
-    <main class="page">
-      <h1>Privacy Policy</h1>
-      <p class="sub"><strong>Last updated:</strong> February 2026</p>
+    <h2>Information We Collect</h2>
+    <p>We collect minimal information to provide the service:</p>
+    <ul>
+      <li><strong style="color:#fff">Questions you ask</strong> — messages you send to the AI assistant are processed to generate a response. We do not store your conversation history.</li>
+      <li><strong style="color:#fff">Persona preference</strong> — if you select a persona during onboarding, this is stored locally on your device only.</li>
+      <li><strong style="color:#fff">Usage data</strong> — we track how many AI questions you've asked today (locally on your device) to enforce the free tier limit. This is never sent to our servers.</li>
+      <li><strong style="color:#fff">Purchase information</strong> — subscriptions are handled entirely by Apple. We do not receive or store your payment details.</li>
+    </ul>
 
-      <hr class="divider" />
+    <h2>Information We Do Not Collect</h2>
+    <ul>
+      <li>We do not collect your name, email address, or any account information</li>
+      <li>We do not track your location</li>
+      <li>We do not use advertising or sell your data to third parties</li>
+      <li>We do not store conversation history on our servers</li>
+    </ul>
 
-      <!-- KEEP YOUR VERBIAGE THE SAME -->
-      <p>
-        PeopleDrop respects your privacy. This Privacy Policy explains how information is handled when you use the PeopleDrop app.
-      </p>
+    <h2>Third-Party Services</h2>
+    <p>xplAIned uses the following third-party services:</p>
+    <ul>
+      <li><strong style="color:#fff">Anthropic</strong> — AI responses are powered by Anthropic's Claude API. Your questions are sent to Anthropic's servers to generate responses. See <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a>.</li>
+      <li><strong style="color:#fff">Supabase</strong> — model data (names, specs, pricing) is fetched from our Supabase database. No personal data is stored there. See <a href="https://supabase.com/privacy" target="_blank">Supabase's Privacy Policy</a>.</li>
+      <li><strong style="color:#fff">Apple</strong> — subscriptions and payments are managed by Apple's App Store. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</li>
+    </ul>
 
-      <h2>Information You Provide</h2>
-      <p>
-        PeopleDrop allows you to create and manage contact profiles that may include personal information such as your name,
-        phone number, email address, company, job title, websites, and other details you choose to add.
-      </p>
-      <p>
-        All information is entered voluntarily by you and remains stored locally on your device unless you choose to share it.
-      </p>
+    <h2>Data Retention</h2>
+    <p>Since we do not collect or store personal data on our servers, there is nothing to delete. All preferences are stored locally on your device and can be cleared by deleting the app.</p>
 
-      <h2>Camera Usage</h2>
-      <p>
-        PeopleDrop may request access to your device’s camera solely to allow you to take a profile photo.
-        Camera access is optional and is not used for video recording or scanning. Profile photos remain on your device.
-      </p>
+    <h2>Children's Privacy</h2>
+    <p>xplAIned is not directed at children under 13. We do not knowingly collect information from children.</p>
 
-      <h2>How Your Information Is Used</h2>
-      <p>Your information is used only to provide the app’s core functionality, including:</p>
-      <ul>
-        <li>Creating and managing contact profiles</li>
-        <li>Sharing contact information via QR codes, share sheets, or vCards</li>
-      </ul>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Changes will be posted at this URL with an updated date. Continued use of the app after changes constitutes acceptance.</p>
 
-      <h2>Data Storage</h2>
-      <p>
-        PeopleDrop does not create user accounts and does not store personal data on external servers.
-        All profile information remains on your device unless you choose to share it.
-      </p>
+    <h2>Contact</h2>
+    <p>Questions about this policy? Email us at <a href="mailto:support@getxplained.com">support@getxplained.com</a>.</p>
 
-      <h2>Data Sharing</h2>
-      <p>
-        PeopleDrop does not sell, rent, or trade your personal information.
-        Data is shared only when you explicitly choose to share it using the app’s features.
-      </p>
-
-      <h2>Analytics and Tracking</h2>
-      <p>
-        PeopleDrop does not track users across apps or websites and does not collect analytics data.
-      </p>
-
-      <h2>Your Choices</h2>
-      <p>
-        You are always in control of the information you add, edit, or delete within PeopleDrop.
-        You can also revoke camera permissions at any time through iOS system settings.
-      </p>
-
-      <h2>Contact</h2>
-      <p>If you have questions about this Privacy Policy, contact:</p>
-      <p><strong>Email:</strong> <a href="mailto:support@peopledrop.me">support@peopledrop.me</a></p>
-
-      <footer>
-        <div>© <span id="y"></span> PeopleDrop</div>
-        <div class="footlinks">
-          <a href="/support">Support</a>
-          <a href="/privacy">Privacy</a>
-          <a href="https://apps.apple.com/us/app/peopledrop/id6758866482" rel="noopener">App Store</a>
-        </div>
-      </footer>
-    </main>
-
+    <footer>
+      <a href="/">Home</a>
+      <a href="/support">Support</a>
+      <br><br>© 2026 xplAIned
+    </footer>
   </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
